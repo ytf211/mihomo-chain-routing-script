@@ -18,7 +18,7 @@
 
 ## 文件
 
-- `链式分流.js`：主脚本文件
+- `mihomo-chain-routing.js`：主脚本文件
 
 ## 适用场景
 
@@ -30,7 +30,7 @@
 
 ## 使用方式
 
-把 `链式分流.js` 作为脚本配置接入支持 JavaScript 配置处理的 Mihomo / Clash Meta 客户端或工作流，然后让客户端把当前配置对象传入 `main(config)`。
+把 `mihomo-chain-routing.js` 作为脚本配置接入支持 JavaScript 配置处理的 Mihomo / Clash Meta 客户端或工作流，然后让客户端把当前配置对象传入 `main(config)`。
 
 脚本会：
 
