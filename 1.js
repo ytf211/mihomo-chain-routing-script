@@ -342,11 +342,12 @@ const main = (config) => {
             proxies: [...FRONT_GROUP_PROXIES],
         },
 
-        // [修改9] 家宽组首位加 节点选择 作为兜底，防止家宽节点全部离线时无法出站
+        // [修改9] 家宽组首位加 全部节点 作为兜底，防止家宽节点全部离线时无法出站
+        // 注意：不能用 节点选择 作为兜底，因为 节点选择 包含本组，会产生循环引用
         {
             name: HOME_GROUP_NAME,
             type: "select",
-            proxies: ["节点选择"],
+            proxies: ["全部节点"],
             "include-all": true,
             filter: HOME_FILTER,
             "exclude-filter": HOME_EXCLUDE_FILTER,
