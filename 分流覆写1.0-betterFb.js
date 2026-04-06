@@ -376,7 +376,7 @@ const main = (config) => {
             "include-all": true,
             "exclude-filter": SPECIAL_EX
         }),
-        svcGroup("Final", {
+        svcGroup("漏网之鱼", {
             "include-all": true,
             "exclude-filter": SPECIAL_EX
         }),
@@ -599,7 +599,7 @@ const main = (config) => {
         "RULE-SET,cn_ip,全球直连,no-resolve",
 
         // 最终兜底
-        "MATCH,Final",
+        "MATCH,漏网之鱼",
     ];
 
     return config;
