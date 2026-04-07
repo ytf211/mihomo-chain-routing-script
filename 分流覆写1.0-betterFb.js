@@ -516,6 +516,9 @@ const main = (config) => {
 
     // --- 4.9 分流规则 ---
     config.rules = [
+       // 本地回环直连（优先级最高，不依赖任何 rule-set）
+        "IP-CIDR,127.0.0.0/8,DIRECT",
+        "IP-CIDR6,::1/128,DIRECT",
         // 广告拦截
         "RULE-SET,banAd_domain,隐私拦截",
 
